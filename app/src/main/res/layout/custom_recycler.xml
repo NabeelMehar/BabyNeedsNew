@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="137dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:padding="15dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Name: "
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/qn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/in"
+                android:text="Qty: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cn"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/qn"
+                android:layout_height="wrap_content"
+                android:text="Color: "
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/sn"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/cn"
+                android:layout_height="wrap_content"
+                android:text="Size: "
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/dn"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/sn"
+                android:layout_height="wrap_content"
+                android:text="Color: "
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/acitemedt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/in"
+                android:text="Wipes"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/acqtyedt"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/qn"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/acitemedt"
+                android:text="32"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/acclredt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/acqtyedt"
+                android:layout_toRightOf="@+id/cn"
+                android:text="Red"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/acsizeedt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sn"
+                android:layout_below="@+id/acclredt"
+                android:text="32"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/acdateedt"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/dn"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/acsizeedt"
+                android:text="12 jan 2018"
+                android:textStyle="italic" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/acdateedt"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/edt_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:drawable/ic_menu_edit" />
+
+                <Button
+                    android:id="@+id/dlt_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:drawable/ic_delete" />
+
+
+            </TableRow>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
